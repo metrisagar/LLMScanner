@@ -1,0 +1,43 @@
+# Scan Execution Architecture
+
+The following diagram illustrates how the [run_full_scan.ps1](file:///c:/llm-security-lab/scripts/run_full_scan.ps1) orchestrator interacts with the individual security tools and the local Ollama instance during a full test run.
+
+```mermaid
+graph TD
+    Orchestrator[run_full_scan.ps1]
+    
+    subgraph Security Scanners
+        G[Garak]
+        P[PyRIT]
+        A[Augustus]
+    end
+    
+    Ollama[Ollama / Target Model]
+    
+    subgraph Generated Reports
+        G_Rep[(garak_results.json)]
+        P_Rep[(pyrit_results.json)]
+        A_Rep[(augustus_results.json)]
+    end
+    
+    FinalReportScript[generate_final_report.py]
+    Final_JSON[(final_security_report.json)]
+
+    Orchestrator -->|Runs| G
+    Orchestrator -->|Runs| P
+    Orchestrator -->|Runs| A
+    
+    G -->|Scans| Ollama
+    P -->|Scans| Ollama
+    A -->|Scans| Ollama
+    
+    G -->|Outputs| G_Rep
+    P -->|Outputs| P_Rep
+    A -->|Outputs| A_Rep
+    
+    G_Rep -->|Aggregated by| FinalReportScript
+    P_Rep -->|Aggregated by| FinalReportScript
+    A_Rep -->|Aggregated by| FinalReportScript
+    
+    FinalReportScript --> Final_JSON
+```
