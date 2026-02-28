@@ -1,0 +1,4 @@
+{
+  "model": "llama3:1b",
+  "base_url": "http://localhost:11434/v1"
+}
