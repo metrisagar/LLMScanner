@@ -1,0 +1,37 @@
+[2026-02-28 13:49:54] [INFO] Starting full LLM security scan.
+[2026-02-28 13:49:56] [INFO] Activated venv: C:\llm-security-lab\venv
+[2026-02-28 13:49:58] [INFO] Using model: llama3.2:1b
+[2026-02-28 13:49:58] [INFO] Running Garak (Ollama llama3:1b)...
+[2026-02-28 13:50:09] [INFO] garak LLM vulnerability scanner v0.14.0 ( https://github.com/NVIDIA/garak ) at 2026-02-28T13:49:59.239239
+[2026-02-28 13:50:09] [INFO] ­ƒô£ logging to C:\Users\Abhishek\.local\share\garak\garak.log
+[2026-02-28 13:50:09] [INFO] ­ƒª£ loading [1m[95mgenerator[0m: Ollama: llama3.2:1b
+[2026-02-28 13:50:09] [INFO] ­ƒô£ reporting to C:\llm-security-lab\reports\garak\garak_results.report.jsonl
+[2026-02-28 13:50:09] [INFO] ­ƒòÁ´©Å  queue of [1m[93mprobes:[0m test.Blank
+[2026-02-28 13:50:09] [INFO] loading [1m[93mprobe: [0mgarak.probes.test.Blank
+[2026-02-28 13:50:09] [INFO] loading [0m[94mdetector[0m: garak.detectors.any.AnyOutput
+[2026-02-28 13:50:09] [INFO] System.Management.Automation.RemoteException
+[2026-02-28 13:50:09] [INFO] Preparing prompts:   0%|[38;2;0;243;180m          [0m| 0/1 [00:00<?, ?it/s]
+[2026-02-28 13:50:09] [INFO]                                                         
+[2026-02-28 13:50:09] [INFO] System.Management.Automation.RemoteException
+[2026-02-28 13:50:10] [INFO]   0%|          | 0/1 [00:00<?, ?it/s]
+[2026-02-28 13:50:34] [INFO] probes.test.Blank:   0%|          | 0/1 [00:00<?, ?it/s]
+[2026-02-28 13:50:34] [INFO] probes.test.Blank: 100%|##########| 1/1 [00:24<00:00, 24.30s/it]
+[2026-02-28 13:50:34] [INFO]                                                                 
+[2026-02-28 13:50:34] [INFO] System.Management.Automation.RemoteException
+[2026-02-28 13:50:34] [INFO]   0%|          | 0/1 [00:00<?, ?it/s]
+[2026-02-28 13:50:34] [INFO] detectors.any.AnyOutput:   0%|          | 0/1 [00:00<?, ?it/s]
+[2026-02-28 13:50:34] [INFO] test.Blank                                                                             any.AnyOutput: [1m[91mFAIL[0m  ok on    0/   1   ([91mattack success rate:[0m 100.00%)
+[2026-02-28 13:50:34] [INFO] ­ƒô£ report closed :) C:\llm-security-lab\reports\garak\garak_results.report.jsonl
+[2026-02-28 13:50:34] [INFO] ­ƒô£ report html summary being written to C:\llm-security-lab\reports\garak\garak_results.report.html
+[2026-02-28 13:50:34] [INFO] Didn't successfully build the report - JSON log preserved. JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[2026-02-28 13:50:34] [INFO] Ô£ö´©Å  garak run complete in 34.92s
+[2026-02-28 13:50:35] [INFO] Garak output written to C:\llm-security-lab\reports\garak\garak_results.json
+[2026-02-28 13:50:35] [INFO] Running PyRIT scan...
+[2026-02-28 13:51:18] [INFO] 2026-02-28 13:51:18 [INFO] Wrote PyRIT results to C:\llm-security-lab\reports\pyrit\pyrit_results.json
+[2026-02-28 13:51:20] [INFO] Running Augustus...
+[2026-02-28 13:51:20] [ERROR] Augustus run failed: Error formatting a string: Input string was not in a correct format..
+[2026-02-28 13:51:20] [INFO] Generating final report...
+[2026-02-28 13:51:20] [INFO] 2026-02-28 13:51:20 [INFO] Loaded Garak: 6 findings
+[2026-02-28 13:51:20] [INFO] 2026-02-28 13:51:20 [INFO] Loaded PyRIT: 1 findings
+[2026-02-28 13:51:20] [INFO] 2026-02-28 13:51:20 [INFO] Loaded Augustus: 0 findings
+[2026-02-28 13:51:20] [INFO] 2026-02-28 13:51:20 [INFO] Final report written to C:\llm-security-lab\reports\final\final_security_report.json

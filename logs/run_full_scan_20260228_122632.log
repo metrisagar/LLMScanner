@@ -1,0 +1,74 @@
+[2026-02-28 12:26:32] [INFO] Starting full LLM security scan.
+[2026-02-28 12:26:33] [INFO] Activated venv: C:\llm-security-lab\venv
+[2026-02-28 12:26:33] [INFO] Running Garak (Ollama llama3:1b)...
+[2026-02-28 12:26:36] [INFO] garak LLM vulnerability scanner v0.14.0 ( https://github.com/NVIDIA/garak ) at 2026-02-28T12:26:33.372374
+[2026-02-28 12:26:36] [INFO] System.Management.Automation.RemoteException
+[2026-02-28 12:26:36] [INFO] Preparing prompts:   0%|[38;2;0;243;180m          [0m| 0/51 [00:00<?, ?it/s]
+[2026-02-28 12:26:36] [INFO] ­ƒô£ logging to C:\Users\Abhishek\.local\share\garak\garak.log
+[2026-02-28 12:26:36] [INFO] ­ƒª£ loading [1m[95mgenerator[0m: Ollama: llama3:1b
+[2026-02-28 12:26:36] [INFO] ­ƒô£ reporting to C:\llm-security-lab\reports\garak\garak_results.report.jsonl
+[2026-02-28 12:26:36] [INFO] ­ƒòÁ´©Å  queue of [1m[93mprobes:[0m ansiescape.AnsiEscaped, ansiescape.AnsiRaw, continuation.ContinueSlursReclaimedSlurs, dan.Ablation_Dan_11_0, dan.AutoDANCached, dan.DanInTheWild, dra.DRA, encoding.InjectAscii85, encoding.InjectAtbash, encoding.InjectBase16, encoding.InjectBase2048, encoding.InjectBase32, encoding.InjectBase64, encoding.InjectBraille, encoding.InjectEcoji, encoding.InjectHex, encoding.InjectMorse, encoding.InjectNato, encoding.InjectROT13, encoding.InjectUU, encoding.InjectUnicodeTagChars, encoding.InjectZalgo, goodside.Tag, latentinjection.LatentInjectionFactSnippetEiffel, latentinjection.LatentInjectionFactSnippetLegal, latentinjection.LatentInjectionReport, latentinjection.LatentInjectionResume, latentinjection.LatentInjectionTranslationEnFr, latentinjection.LatentInjectionTranslationEnZh, latentinjection.LatentJailbreak, latentinjection.LatentWhois, latentinjection.LatentWhoisSnippet, phrasing.FutureTense, phrasing.PastTense, promptinject.HijackHateHumans, promptinject.HijackKillHumans, promptinject.HijackLongPrompt
+[2026-02-28 12:26:36] [INFO] loading [1m[93mprobe: [0mgarak.probes.ansiescape.AnsiEscaped
+[2026-02-28 12:26:36] [INFO] loading [0m[94mdetector[0m: garak.detectors.ansiescape.Escaped
+[2026-02-28 12:26:36] [INFO]                                                          
+[2026-02-28 12:26:36] [INFO] System.Management.Automation.RemoteException
+[2026-02-28 12:26:36] [INFO]   0%|          | 0/51 [00:00<?, ?it/s]
+[2026-02-28 12:26:36] [INFO] probes.ansiescape.AnsiEscaped:   0%|          | 0/51 [00:00<?, ?it/s]
+[2026-02-28 12:26:36] [INFO]                                                                      
+[2026-02-28 12:26:36] [INFO] Traceback (most recent call last):
+[2026-02-28 12:26:36] [INFO]   File "<frozen runpy>", line 198, in _run_module_as_main
+[2026-02-28 12:26:36] [INFO]   File "<frozen runpy>", line 88, in _run_code
+[2026-02-28 12:26:36] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\__main__.py", line 14, in <module>
+[2026-02-28 12:26:36] [INFO]     main()
+[2026-02-28 12:26:36] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\__main__.py", line 9, in main
+[2026-02-28 12:26:36] [INFO]     cli.main(sys.argv[1:])
+[2026-02-28 12:26:36] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\cli.py", line 614, in main
+[2026-02-28 12:26:36] [INFO]     command.probewise_run(
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\command.py", line 259, in probewise_run
+[2026-02-28 12:26:37] [INFO]     probewise_h.run(generator, probe_names, evaluator, buffs)
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\harnesses\probewise.py", line 109, in run
+[2026-02-28 12:26:37] [INFO]     super().run(model, [probe], detectors, evaluator, announce_probe=False)
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\harnesses\base.py", line 151, in run
+[2026-02-28 12:26:37] [INFO]     attempt_results = probe.probe(model)
+[2026-02-28 12:26:37] [INFO]                       ^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\probes\base.py", line 449, in probe
+[2026-02-28 12:26:37] [INFO]     attempts_completed = self._execute_all(attempts_todo)
+[2026-02-28 12:26:37] [INFO]                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\probes\base.py", line 360, in _execute_all
+[2026-02-28 12:26:37] [INFO]     result = self._execute_attempt(this_attempt)
+[2026-02-28 12:26:37] [INFO]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\probes\base.py", line 302, in _execute_attempt
+[2026-02-28 12:26:37] [INFO]     this_attempt.outputs = self.generator.generate(
+[2026-02-28 12:26:37] [INFO]                            ^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\generators\base.py", line 170, in generate
+[2026-02-28 12:26:37] [INFO]     outputs = self._call_model(prompt, 1)
+[2026-02-28 12:26:37] [INFO]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\backoff\_sync.py", line 105, in retry
+[2026-02-28 12:26:37] [INFO]     ret = target(*args, **kwargs)
+[2026-02-28 12:26:37] [INFO]           ^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\backoff\_sync.py", line 48, in retry
+[2026-02-28 12:26:37] [INFO]     ret = target(*args, **kwargs)
+[2026-02-28 12:26:37] [INFO]           ^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\generators\ollama.py", line 102, in _call_model
+[2026-02-28 12:26:37] [INFO]     raise e
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\garak\generators\ollama.py", line 94, in _call_model
+[2026-02-28 12:26:37] [INFO]     response = self.client.chat(
+[2026-02-28 12:26:37] [INFO]                ^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\ollama\_client.py", line 365, in chat
+[2026-02-28 12:26:37] [INFO]     return self._request(
+[2026-02-28 12:26:37] [INFO]            ^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\ollama\_client.py", line 189, in _request
+[2026-02-28 12:26:37] [INFO]     return cls(**self._request_raw(*args, **kwargs).json())
+[2026-02-28 12:26:37] [INFO]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026-02-28 12:26:37] [INFO]   File "C:\llm-security-lab\venv\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+[2026-02-28 12:26:37] [INFO]     raise ResponseError(e.response.text, e.response.status_code) from None
+[2026-02-28 12:26:37] [INFO] ollama._types.ResponseError: model 'llama3:1b' not found (status code: 404)
+[2026-02-28 12:26:37] [WARN] Garak returned exit code 1
+[2026-02-28 12:26:37] [INFO] Garak output written to C:\llm-security-lab\reports\garak\garak_results.json
+[2026-02-28 12:26:37] [INFO] Running PyRIT scan...
+[2026-02-28 12:26:48] [INFO] 2026-02-28 12:26:48 [WARNING] Ollama call failed: HTTP Error 404: Not Found
+[2026-02-28 12:26:50] [INFO] 2026-02-28 12:26:50 [WARNING] Ollama call failed: HTTP Error 404: Not Found
+[2026-02-28 12:26:50] [INFO] 2026-02-28 12:26:50 [INFO] Wrote PyRIT results to C:\llm-security-lab\reports\pyrit\pyrit_results.json
+[2026-02-28 12:26:51] [INFO] Running Augustus...
+[2026-02-28 12:26:52] [INFO] Augustus not found. Skipping; writing placeholder.
+[2026-02-28 12:26:52] [INFO] Generating final report...

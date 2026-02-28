@@ -1,0 +1,8 @@
+[2026-02-28 12:18:51] [INFO] Starting LLM Security Lab environment setup.
+[2026-02-28 12:18:52] [INFO] Using Python: py
+[2026-02-28 12:18:52] [INFO] Upgrading pip
+[2026-02-28 12:18:57] [INFO] Installing garak
+[2026-02-28 12:19:45] [INFO] garak installed successfully.
+[2026-02-28 12:19:45] [INFO] Installing pyrit
+[2026-02-28 12:20:56] [INFO] pyrit installed successfully.
+[2026-02-28 12:20:57] [INFO] Installing augustus via go install

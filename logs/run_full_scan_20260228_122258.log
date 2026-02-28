@@ -1,0 +1,6 @@
+[2026-02-28 12:22:58] [INFO] Starting full LLM security scan.
+[2026-02-28 12:22:58] [INFO] Activated venv: C:\llm-security-lab\venv
+[2026-02-28 12:22:58] [INFO] Running Garak (Ollama llama3:1b)...
+[2026-02-28 12:23:08] [INFO] garak LLM vulnerability scanner v0.14.0 ( https://github.com/NVIDIA/garak ) at 2026-02-28T12:22:58.720901
+[2026-02-28 12:23:08] [ERROR] Garak run failed: System.Management.Automation.RemoteException
+[2026-02-28 12:23:08] [INFO] Running PyRIT scan...

@@ -1,0 +1,16 @@
+[2026-02-28 12:22:06] [INFO] Starting LLM Security Lab environment setup.
+[2026-02-28 12:22:07] [INFO] Using Python: py
+[2026-02-28 12:22:07] [INFO] Upgrading pip
+[2026-02-28 12:22:09] [INFO] Installing garak
+[2026-02-28 12:22:11] [INFO] garak installed successfully.
+[2026-02-28 12:22:11] [INFO] Installing pyrit
+[2026-02-28 12:22:15] [INFO] pyrit installed successfully.
+[2026-02-28 12:22:15] [INFO] Installing augustus via go install
+[2026-02-28 12:22:16] [WARN] go install for augustus failed: go: downloading github.com/praetorian-inc/augustus v0.0.8
+[2026-02-28 12:22:16] [INFO] Downloading Augustus Windows binary from GitHub releases
+[2026-02-28 12:22:16] [WARN] Could not download Augustus. Install Go and run 'go install github.com/praetorian-inc/augustus/cmd/augustus@latest' or add Augustus to PATH.
+[2026-02-28 12:22:16] [WARN] Augustus not available. Scan will skip Augustus. Install Go and run: go install github.com/praetorian-inc/augustus/cmd/augustus@latest
+[2026-02-28 12:22:16] [INFO] Checking Ollama installation and service
+[2026-02-28 12:22:19] [INFO] Ollama is running at http://localhost:11434
+[2026-02-28 12:22:19] [INFO] Model llama3:1b already available.
+[2026-02-28 12:22:19] [INFO] Setup complete. Log: C:\llm-security-lab\logs\setup_environment_20260228_122206.log

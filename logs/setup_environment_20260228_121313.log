@@ -1,0 +1,5 @@
+[2026-02-28 12:13:13] [INFO] Starting LLM Security Lab environment setup.
+[2026-02-28 12:13:13] [INFO] Using Python: py
+[2026-02-28 12:13:13] [INFO] Creating virtual environment at C:\llm-security-lab\venv
+[2026-02-28 12:13:25] [INFO] Upgrading pip
+[2026-02-28 12:13:35] [INFO] Installing garak
